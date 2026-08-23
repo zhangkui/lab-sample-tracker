@@ -3,8 +3,8 @@ package service
 import (
 	"context"
 	"fmt"
-	"github.com/jb843051627/lab-sample-tracker/internal/model"
-	"github.com/jb843051627/lab-sample-tracker/internal/validation"
+	"github.com/zhangkui/lab-sample-tracker/internal/model"
+	"github.com/zhangkui/lab-sample-tracker/internal/validation"
 )
 
 func (l *Lab) transition(ctx context.Context, id string, to model.SampleStatus, version int) error {

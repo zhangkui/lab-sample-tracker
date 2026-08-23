@@ -3,10 +3,10 @@ package service
 import (
 	"context"
 	"fmt"
-	"github.com/jb843051627/lab-sample-tracker/internal/clock"
-	"github.com/jb843051627/lab-sample-tracker/internal/ingest"
-	"github.com/jb843051627/lab-sample-tracker/internal/model"
-	"github.com/jb843051627/lab-sample-tracker/internal/store"
+	"github.com/zhangkui/lab-sample-tracker/internal/clock"
+	"github.com/zhangkui/lab-sample-tracker/internal/ingest"
+	"github.com/zhangkui/lab-sample-tracker/internal/model"
+	"github.com/zhangkui/lab-sample-tracker/internal/store"
 	"sync"
 )
 

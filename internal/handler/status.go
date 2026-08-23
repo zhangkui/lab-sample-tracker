@@ -3,8 +3,8 @@ package handler
 import (
 	"context"
 	"encoding/json"
-	"github.com/jb843051627/lab-sample-tracker/internal/model"
-	"github.com/jb843051627/lab-sample-tracker/internal/service"
+	"github.com/zhangkui/lab-sample-tracker/internal/model"
+	"github.com/zhangkui/lab-sample-tracker/internal/service"
 	"net/http"
 	"strconv"
 	"strings"

@@ -2,7 +2,7 @@ package validation
 
 import (
 	"fmt"
-	"github.com/jb843051627/lab-sample-tracker/internal/model"
+	"github.com/zhangkui/lab-sample-tracker/internal/model"
 	"strings"
 )
 

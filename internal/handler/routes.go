@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"github.com/jb843051627/lab-sample-tracker/internal/service"
+	"github.com/zhangkui/lab-sample-tracker/internal/service"
 	"net/http"
 )
 

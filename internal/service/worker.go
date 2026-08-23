@@ -2,8 +2,8 @@ package service
 
 import (
 	"context"
-	"github.com/jb843051627/lab-sample-tracker/internal/ingest"
-	"github.com/jb843051627/lab-sample-tracker/internal/model"
+	"github.com/zhangkui/lab-sample-tracker/internal/ingest"
+	"github.com/zhangkui/lab-sample-tracker/internal/model"
 )
 
 func (b *BatchService) Process(ctx context.Context, id string) error {

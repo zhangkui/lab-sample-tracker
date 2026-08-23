@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/jb843051627/lab-sample-tracker/internal/handler"
-	"github.com/jb843051627/lab-sample-tracker/internal/service"
-	"github.com/jb843051627/lab-sample-tracker/internal/store"
+	"github.com/zhangkui/lab-sample-tracker/internal/handler"
+	"github.com/zhangkui/lab-sample-tracker/internal/service"
+	"github.com/zhangkui/lab-sample-tracker/internal/store"
 	"log"
 	"net/http"
 	"os"

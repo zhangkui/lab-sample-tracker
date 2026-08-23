@@ -1,7 +1,7 @@
 package service
 
 import (
-	"github.com/jb843051627/lab-sample-tracker/internal/model"
+	"github.com/zhangkui/lab-sample-tracker/internal/model"
 	"sort"
 )
 
