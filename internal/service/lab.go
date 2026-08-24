@@ -20,7 +20,7 @@ type Lab struct {
 }
 
 func NewLab(repo *store.Store) *Lab {
-	l := &Lab{repo: repo, clock: clock.System{}, queue: ingest.New(32), cache: nil}
+	l := &Lab{repo: repo, clock: clock.System{}, queue: ingest.New(32), cache: map[string]model.Sample{}}
 	return l
 }
 func (l *Lab) Close() { l.queue.Close(); l.workers.Wait() }
