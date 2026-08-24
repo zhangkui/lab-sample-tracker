@@ -13,6 +13,7 @@ type Manifest struct {
 }
 
 func NewManifest(id string, files []string) Manifest {
-	h := sha256.Sum256([]byte(strings.Join(files, "|")))
-	return Manifest{ID: id, Checksum: hex.EncodeToString(h[:]), Files: files}
+	dup := append([]string(nil), files...)
+	h := sha256.Sum256([]byte(strings.Join(dup, "|")))
+	return Manifest{ID: id, Checksum: hex.EncodeToString(h[:]), Files: dup}
 }
