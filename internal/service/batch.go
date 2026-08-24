@@ -16,7 +16,13 @@ func NewBatchService(l *Lab) *BatchService {
 	return &BatchService{lab: l, batches: map[string]model.Batch{}}
 }
 func (b *BatchService) Create(id string, sampleIDs []string) model.Batch {
-	v := model.Batch{ID: id, SampleIDs: sampleIDs, State: "open"}
+	// Copy the caller's slice so later mutations to the input cannot
+	// leak into the stored batch. Using len==cap guarantees that any
+	// subsequent append reallocates rather than writing into the
+	// backing array shared with stored/returned batches.
+	samples := make([]string, len(sampleIDs))
+	copy(samples, sampleIDs)
+	v := model.Batch{ID: id, SampleIDs: samples, State: "open"}
 	b.mu.Lock()
 	b.batches[id] = v
 	b.mu.Unlock()
