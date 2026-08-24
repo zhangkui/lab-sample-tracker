@@ -18,7 +18,7 @@ type IntakeService struct {
 }
 
 func (l *Lab) NewIntake() *IntakeService {
-	return &IntakeService{lab: l, batches: nil}
+	return &IntakeService{lab: l, batches: map[string]*model.BatchRecord{}}
 }
 
 func (s *IntakeService) CreateBatch(project, id string, at time.Time) (model.BatchRecord, error) {
